@@ -12,8 +12,8 @@ const EmailHtmlRender = ({sethtmlString}) => {
     }, []);
     
     useEffect(() => {
-        sethtmlString(htmlFileString)
-    },[htmlFileString])
+        sethtmlString(htmlFileString);
+    },[htmlFileString, sethtmlString])
 
     return(
         <div dangerouslySetInnerHTML={{ __html: htmlFileString }}></div>

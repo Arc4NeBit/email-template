@@ -7,6 +7,13 @@
   <title>Company Name</title>
   <style media="all" type="text/css">
     @media screen and (max-width: 480px) {
+      html, body{
+        overflow-x: hidden;
+      }
+      body {
+        width: 100%;
+        position: relative;
+      }
       table {
         width: 80% !important;
         display: contents;
@@ -32,13 +39,25 @@
       div[id="render"] {
         margin: 0 8vw 0 8vw !important;
       }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        margin: 0 6vw 0 6vw;
+        column-gap: 10px;
+        row-gap: 10px;
+      }
     }
     @media screen and (max-width: 640px) and (min-width: 480px) {
       table {
         width: 75% !important;
         display: contents;
       }
-      
+      table[id="main-app"] {
+        display: block;
+        width: 80vw !important;
+        margin: auto;
+      }
       a {
         width: 80%;
         padding: 10px 20vw;
@@ -63,17 +82,28 @@
       div[id="render"] {
         margin: 0 8vw 0 8vw !important;
       }
+
+      .promo-title{
+        padding: 10px 0 10px 0 !important;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        /* margin: 0 6vw 0 6vw; */
+        column-gap: 10px;
+        row-gap: 10px;
+      }
     }
     @media screen and (min-width: 640px) {
       table {
-        width: 70%;
-        display: contents;
+        display: block;
       }
 
       table[id="main-app"] {
-        width: 60vw !important;
-        margin: 0 20vw 0 20vw !important;
-        display: inline-block !important;
+        display: block;
+        width: 80vw !important;
+        margin: auto;
       }
      
       a {
@@ -99,6 +129,25 @@
       div[id="render"] {
         margin: 0 8vw 0 8vw !important;
       }
+      
+     div.grid div{
+      height: 250px;
+     }
+
+      .promo-img {
+        height: 250px !important;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        margin: 0;
+        column-gap: 20px;
+        row-gap: 20px;
+      }
+      .promo-title{
+        padding: 10px 0 10px 0 !important;
+      }
     }
   </style>
 </head>
@@ -110,42 +159,61 @@
           <tr>
             <td>
               <h2 style="text-align:center; margin: 0px; padding-bottom: 25px; margin-top: 25px;">
-                <i>Company</i><span style="color:lightcoral">Name</span></h2>
+                <i>Daily</i><span style="color:lightcoral">MemeS</span></h2>
             </td>
           </tr>
           <tr>
             <td>
-              <img src="logo192.png" height="50px" style="display:block; margin:auto;padding-bottom: 25px; ">
+              <img src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T127A1PA4192PT21X6Y13D1010388313W2105H689/views/1,width=550,height=550,appearanceId=1,backgroundColor=FFFFFF,noPt=true/meme-box-logo-small-buttons.jpg"
+                height="50px" style="display:block; margin:auto;padding-bottom: 25px; ">
             </td>
           </tr>
           <tr>
             <td style="text-align: center;">
               <h1 style="margin: 0px;padding-bottom: 25px; text-transform: uppercase;">monthly reminder</h1>
               <h2 style="margin: 0px;padding-bottom: 25px;font-size:22px;"> Please renew your subscription</h2>
-              <p>Click any item in your email to open
-                setting pannel on the right. You can change background colour, padding
-                and set position of the text and image.
+              <p> Your meme subscription is ending. Not good. You will be notified when the subscription expires. </p>
+              <p>
+                To renew your subscription please click the link at the bottom and enter your name, credit card number, expiration date, cvv, your address, what you ate today, 
+                how many memes you've watched for past 10 days
               </p>
-              <p>To edit this text, change
-                text alignment and add links, double click to get into text edit mode. To change fonts, Use Default
-                fonts from the design tab on the right.
-              </p>
-              <!-- <h2 style="margin: 0px; padding-bottom: 25px;">Expire: 05 November</h2> -->
+              <h2 style="margin: 0px; padding-bottom: 25px;">Expire: 03 November</h2>
             </td>
           </tr>
-          <!-- <tr>
+          <tr>
             <td>
-              <button type="button" style="background-color:#36b445; color:white; padding:15px 97px; outline: none; display: block; margin: auto; border-radius: 31px;
-                                font-weight: bold; margin-top: 25px; margin-bottom: 25px; border: none; text-transform:uppercase; ">Renew</button>
+              <h1 style="margin: 0px; padding-bottom: 25px; text-align: center;">
+                Here are some memes you might like
+              </h1>
             </td>
-          </tr> -->
+          </tr>
+          <tr>
+              <td>
+                <div class="grid">
+                  <div id="promotion-rick">
+  
+                  </div>
+                  <div id="promotion-door">
+    
+                  </div>
+                  <div id="promotion-amogus">
+    
+                  </div>
+                  <div id="promotion-money">
+    
+                  </div>            
+                </div>
+            </td>
+          </tr>
           <tr>
             <td style="text-align:center;">
 
               <div id="render"></div>
 
-              <h2 style="padding-top: 25px; line-height: 1; margin:0px;">Need Help?</h2>
-              <div style="margin-bottom: 25px; font-size: 15px;margin-top:7px;">Give us a Missed call Sample-1800
+              <h2 style="padding-top: 25px; line-height: 1; margin:0px;" >
+                <a href="https://youtu.be/dBLxroL78RQ?si=pg6VbA7-WRXyQnyR" style="text-decoration: none; padding: 0;">Need Help?</a>
+              </h2>
+              <div style="margin-bottom: 25px; font-size: 15px;margin-top:7px;">
               </div>
             </td>
           </tr>
