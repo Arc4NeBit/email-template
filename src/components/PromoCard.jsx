@@ -21,8 +21,7 @@ const imgDefaultStyles = {
     height: "150px",
 };
 
-function PromoSection({href, imghref, title}) {
-
+function PromoCard({href, imghref, title}) {
     return(
         <table >
             <tr>
@@ -37,4 +36,4 @@ function PromoSection({href, imghref, title}) {
     )
 }
 
-export default PromoSection;
+export default PromoCard;

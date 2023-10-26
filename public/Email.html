@@ -6,39 +6,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Company Name</title>
   <style media="all" type="text/css">
-    @media screen and (max-width: 480px) {
-      html, body{
+    @media screen and (max-width: 479px) {
+
+      html,
+      body {
         overflow-x: hidden;
       }
+
       body {
         width: 100%;
         position: relative;
       }
-      table {
+
+      /* table {
         width: 80% !important;
         display: contents;
-      }
+      } */
+
       a {
         width: 80%;
         padding: 10px 25vw;
       }
+
       table h1 {
         font-size: 24px !important;
       }
+
       table h2 {
         font-size: 20px !important;
       }
+
       table h3 {
         font-size: 14px !important;
       }
-      p{
+
+      p {
         font-size: 20px !important;
-        margin: 0px 40px; 
+        margin: 0px 40px;
         padding-bottom: 25px;
       }
+
       div[id="render"] {
         margin: 0 8vw 0 8vw !important;
       }
+
+      div.meme-king table {
+        display: block;
+        height: 270px !important;
+        margin: 0 3% 0 3%;
+      }
+
+      div.meme-king p{
+        margin: 12px 10px !important;
+        padding: 0 !important;
+        text-align: center;
+        overflow-y: scroll;
+        height: 120px !important;
+        overflow-wrap: break-word;
+      }
+
+      div.meme-king p::-webkit-scrollbar {
+        display: none;
+      }
+
+      div.meme-king h1 {
+        word-wrap: break-word;
+      }
+
+      .meme-king-td{
+        height: 210px !important;
+      }
+
 
       .grid {
         display: grid;
@@ -48,16 +86,15 @@
         row-gap: 10px;
       }
     }
+
     @media screen and (max-width: 640px) and (min-width: 480px) {
-      table {
-        width: 75% !important;
-        display: contents;
-      }
+
       table[id="main-app"] {
         display: block;
         width: 80vw !important;
         margin: auto;
       }
+
       a {
         width: 80%;
         padding: 10px 20vw;
@@ -66,16 +103,18 @@
       table h1 {
         font-size: 22px !important;
       }
+
       table h2 {
         font-size: 18px !important;
       }
+
       table h3 {
         font-size: 12px !important;
       }
 
-      p{
+      p {
         font-size: 18px !important;
-        margin: 0px 40px; 
+        margin: 0px 40px;
         padding-bottom: 25px;
       }
 
@@ -83,19 +122,35 @@
         margin: 0 8vw 0 8vw !important;
       }
 
-      .promo-title{
+      div.meme-king table {
+        display: block;
+        height: 210px !important;
+        margin: 0 5% 0 5% !important;
+      }
+
+      .meme-king-td{
+        height: 150px !important;
+      }
+
+      div.meme-king p{
+        margin: 12px 15px !important;
+        padding: 0 !important;
+        text-align: center;
+      }
+
+      .promo-title {
         padding: 10px 0 10px 0 !important;
       }
 
       .grid {
         display: grid;
         grid-template-columns: 40vw 40vw;
-        /* margin: 0 6vw 0 6vw; */
         column-gap: 10px;
         row-gap: 10px;
       }
     }
-    @media screen and (min-width: 640px) {
+
+    @media screen and (min-width: 641px) and (max-width: 820px) {
       table {
         display: block;
       }
@@ -105,34 +160,46 @@
         width: 80vw !important;
         margin: auto;
       }
-     
+
       a {
         padding: 10px 15vw;
         font-size: 16px !important;
       }
+
       table h1 {
         font-size: 20px !important;
       }
+
       table h2 {
         font-size: 16px !important;
       }
+
       table h3 {
         font-size: 10px !important;
       }
 
-      p{
+      p {
         font-size: 16px !important;
-        margin: 0px 40px; 
+        margin: 0px 40px;
         padding-bottom: 25px;
       }
 
       div[id="render"] {
         margin: 0 8vw 0 8vw !important;
       }
-      
-     div.grid div{
-      height: 250px;
-     }
+
+      div.meme-king table {
+        height: 180px !important;
+        margin: 0 10% 0 10%;
+      }
+
+      .meme-king-td{
+        height: 120px !important;
+      }
+
+      div.grid table {
+        height: 250px;
+      }
 
       .promo-img {
         height: 250px !important;
@@ -145,12 +212,79 @@
         column-gap: 20px;
         row-gap: 20px;
       }
-      .promo-title{
+
+      .promo-title {
+        padding: 10px 0 10px 0 !important;
+      }
+
+    }
+
+    @media screen and (min-width: 821px) {
+      table {
+        display: block;
+      }
+
+      table[id="main-app"] {
+        display: block;
+        width: 80vw !important;
+        margin: auto;
+      }
+
+      a {
+        padding: 10px 15vw;
+        font-size: 16px !important;
+      }
+
+      table h1 {
+        font-size: 20px !important;
+      }
+
+      table h2 {
+        font-size: 16px !important;
+      }
+
+      table h3 {
+        font-size: 10px !important;
+      }
+
+      p {
+        font-size: 16px !important;
+        margin: 0px 40px;
+        padding-bottom: 25px;
+      }
+
+      div[id="render"] {
+        margin: 0 8vw 0 8vw !important;
+      }
+
+      div.meme-king table {
+        height: 150px !important;
+        margin: 0 10% 0 10%;
+      }
+
+      div.grid table {
+        height: 250px;
+      }
+
+      .promo-img {
+        height: 250px !important;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        margin: 0;
+        column-gap: 20px;
+        row-gap: 20px;
+      }
+
+      .promo-title {
         padding: 10px 0 10px 0 !important;
       }
     }
   </style>
 </head>
+
 <body bgcolor="#0f3462" style="margin-top:20px;margin-bottom:20px">
   <table id="main-app" border="0" cellspacing="0" cellpadding="0" bgcolor="white">
     <tr>
@@ -164,7 +298,8 @@
           </tr>
           <tr>
             <td>
-              <img src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T127A1PA4192PT21X6Y13D1010388313W2105H689/views/1,width=550,height=550,appearanceId=1,backgroundColor=FFFFFF,noPt=true/meme-box-logo-small-buttons.jpg"
+              <img
+                src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T127A1PA4192PT21X6Y13D1010388313W2105H689/views/1,width=550,height=550,appearanceId=1,backgroundColor=FFFFFF,noPt=true/meme-box-logo-small-buttons.jpg"
                 height="50px" style="display:block; margin:auto;padding-bottom: 25px; ">
             </td>
           </tr>
@@ -174,23 +309,43 @@
               <h2 style="margin: 0px;padding-bottom: 25px;font-size:22px;"> Please renew your subscription</h2>
               <p> Your meme subscription is ending. Not good. You will be notified when the subscription expires. </p>
               <p>
-                To renew your subscription please click the link at the bottom and enter your name, credit card number, expiration date, cvv, your address, what you ate today, 
+                To renew your subscription please click the link at the bottom and enter your name, credit card number,
+                expiration date, cvv, your address, what you ate today,
                 how many memes you've watched for past 10 days
               </p>
               <h2 style="margin: 0px; padding-bottom: 25px;">Expire: 03 November</h2>
             </td>
           </tr>
           <tr>
+            <td style="text-align: center;">
+              <h1 style="margin: 0px;padding-bottom: 25px; padding-top: 15px; text-transform: uppercase;">
+                We are constantly expanding. Currently we have over 2 billion subscribers
+              </h1>
+              <h2 style="margin: 0px;padding-bottom: 25px;font-size:22px;"> The meme crew also looking for a person
+                willing to take position of Meme King</h2>
+              <p>
+                To be Meme King you must:
+              </p>
+            </td>
+          </tr>
+          <tr>
             <td>
-              <h1 style="margin: 0px; padding-bottom: 25px; text-align: center;">
-                Here are some memes you might like
+              <div class="meme-king grid" id="meme-king-section">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h1 style="margin: 0px; padding-bottom: 25px; padding-top: 15px; text-align: center;">
+                In the meantime, here are some memes you might like:
               </h1>
             </td>
           </tr>
           <tr>
-              <td>
-                <div class="grid">
-                  <div id="promotion-rick">
+            <td>
+              <!-- <div class="grid"> -->
+              <div class="grid" id="promotion-section">
+                <!-- <div id="promotion-rick">
   
                   </div>
                   <div id="promotion-door">
@@ -201,8 +356,8 @@
                   </div>
                   <div id="promotion-money">
     
-                  </div>            
-                </div>
+                  </div>             -->
+              </div>
             </td>
           </tr>
           <tr>
@@ -210,8 +365,9 @@
 
               <div id="render"></div>
 
-              <h2 style="padding-top: 25px; line-height: 1; margin:0px;" >
-                <a href="https://youtu.be/dBLxroL78RQ?si=pg6VbA7-WRXyQnyR" style="text-decoration: none; padding: 0;">Need Help?</a>
+              <h2 style="padding-top: 25px; line-height: 1; margin:0px;">
+                <a href="https://youtu.be/dBLxroL78RQ?si=pg6VbA7-WRXyQnyR"
+                  style="text-decoration: none; padding: 0;">Need Help?</a>
               </h2>
               <div style="margin-bottom: 25px; font-size: 15px;margin-top:7px;">
               </div>
