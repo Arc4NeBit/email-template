@@ -24,7 +24,7 @@ function MemeKingCard({title, description}) {
             <tr style={{display: "block"}}>
                 <td style={tdDefaultStyles} className="meme-king-td">
                     <h1 style={{...titleDefaultStyles}}>{title}</h1>
-                    <p className="promo-title"  >{description}</p>
+                    <p className="promo-title">{description}</p>
                 </td>
             </tr>
         </table>
